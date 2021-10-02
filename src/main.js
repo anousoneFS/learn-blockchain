@@ -81,12 +81,12 @@ class Blockchain{
         return balance;
     }
 
-    addBlock(newBlock){
-        newBlock.previousHash = this.getLastesBlock().hash;
-        // newBlock.hash = newBlock.calculateHash();;
-        newBlock.minBlock(this.difficulty);
-        this.chain.push(newBlock);
-    }
+    // addBlock(newBlock){
+    //     newBlock.previousHash = this.getLastesBlock().hash;
+    //     // newBlock.hash = newBlock.calculateHash();;
+    //     newBlock.minBlock(this.difficulty);
+    //     this.chain.push(newBlock);
+    // }
 
     isChainValid(){
         for(let i=1; i < this.chain.length; i++){
